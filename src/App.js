@@ -1,6 +1,7 @@
 import './App.css';
 import Header from "./Components/Header";
-import { Grid, Paper, Typography, Container, Card, CardContent, CardActions, Button} from "@material-ui/core";
+import { Grid, Typography, Container, Card, CardContent, CardActions, Button} from "@material-ui/core";
+import { spacing } from "@material-ui/system";
 
 function App() {
   return (
@@ -8,7 +9,7 @@ function App() {
     <Header/>
     <Container maxWidth="lg" className="content">
       <Grid container spacing={1} justify="center" alignItems="flex-start">
-        <Grid item md={12} lg={3}>
+        <Grid item md={12} lg={4}>
           <Card>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
@@ -25,15 +26,16 @@ function App() {
                 <br/><br/>
 
                 Ein nächster Schritt wäre die Implementierung von weiteren Funktionen, wie das Nutzen von "Priority Arrays".
-                Dafür müsste aber eine bessere Library für BACnet in Javascript oder Typescript verfügbar sein.
+                Dafür müsste aber eine bessere Library für BACnet in Javascript oder Typescript verfügbar sein. Vielleicht 
+                könnte ich dies sogar selber entwickeln...
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="medium" color="primary">Erfahre mehr</Button>
+              <Button size="medium" color="primary" href="https://github.com/caserage/bachome" target="_blank">Erfahre mehr</Button>
             </CardActions>
           </Card>
         </Grid>
-        <Grid item md={12} lg={3}>
+        <Grid item md={12} lg={4}>
           <Card>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
@@ -55,11 +57,11 @@ function App() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="medium" color="primary">Erfahre mehr</Button>
+              <Button size="medium" color="primary" href="https://github.com/caserage/tinkerforge-ws" target="_blank">Erfahre mehr</Button>
             </CardActions>
           </Card>
         </Grid>
-        <Grid item md={12} lg={3}>
+        <Grid item md={12} lg={4}>
           <Card>
             <CardContent>
               <Typography color="textSecondary" gutterBottom>
@@ -82,9 +84,14 @@ function App() {
               </Typography>
             </CardContent>
             <CardActions>
-              <Button size="medium" color="primary">Erfahre mehr</Button>
+              <Button size="medium" color="primary" href="https://github.com/caserage/deb" target="_blank">Erfahre mehr</Button>
             </CardActions>
           </Card>
+        </Grid>
+      </Grid>
+      <Grid container spacing={1}>
+        <Grid item sm={12}>
+          <Typography></Typography>
         </Grid>
       </Grid>
     </Container>
