@@ -1,7 +1,8 @@
-.grid  {
-  max-width: 1920px;
-}
-
 .content {
   min-height: 100vh;
+}
+
+.card-image {
+  height: 200px;
+  width: 100%;
 }
